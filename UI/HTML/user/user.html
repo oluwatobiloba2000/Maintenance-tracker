@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="shortcut icon" href="/UI/img/technical-support-2_icon-icons.com_52811.ico">
+  <link rel="stylesheet" href="/UI/STYLE/userStyle.css">
+  <title>User | maintenance Tracker</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="top_nav">
+        <h2>
+          <a href="/UI/index.html"><img id="logo" src="/UI/img/logo.png" alt="logo">&nbsp;Maintenance Tracker</a>
+        </h2>
+        <i class="fas fa-bars"></i>
+        <span id="top_username_display" class="top_nav_username i"><i class="far fa-user"></i>&nbsp;Username <i
+            class="fas fa-check-circle"></i></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="i" class="page_container">
+      <!-- SIDE NAV STARTS -->
+      <div class="side_nav">
+        <p class="nav_icon"><i class="fas fa-times"></i></p>
+        <p class="side_nav_logo"><img src="/UI/img/logo.png" alt=""></p>
+        <p id="side_username_display" class="side_nav_username"><i class="far fa-user"></i>&nbsp;Username <i
+            class="fas fa-check-circle"></i></p>
+        <ul>
+          <li id="all_requests">View all requests</li>
+          <hr>
+          <a href="/UI/HTML/user/approved-requests.html">
+            <li id="approved_requests">Aproved requests</li>
+          </a>
+          <hr>
+          <a href="/UI/HTML/user/rejected-requests.html">
+            <li id="rejected_requests">Rejected requests</li>
+          </a>
+          <hr>
+          <li id="new_request">Create a new request</li>
+          <hr>
+        </ul>
+        <div class="side_nav_logout">
+          <a class="log_out" href="/UI/index.html">
+            <p>Log out</p>
+          </a>
+        </div>
+      </div>
+      <!-- SIDE NAV ENDS -->
+      <!-- POP UP FORM STARTS-->
+      <div id="pop_up_form">
+       <form id="form"> <!--method="GET" action="/UI/UI Elements/HTML/user.html" -->
+        <h2>Make a request</h2>
+        <label for="title">Title
+        <br>
+          <input id="title" name="title" placeholder="Request title" type="text" required>
+          </label>
+          <br>
+          <p>Request category
+            <br>
+            <select name="category" id="post_category">
+              <option disabled>Please choose a category</option>
+              <option value="Mainteinance">Maintenance</option>
+              <option value="Repair">Repair</option>
+            </select>
+          </p>
+          <label for="description">Request description</label>
+          <br>
+          <textarea name="description" id="description" cols="30" placeholder="Request description" rows="10"
+            required></textarea>
+          <br>
+          <button id="submit">Submit request</button>
+          <p id="close">close</p>
+        </form>
+      </div>
+      <!-- POP UP FORM ENDS -->
+      <div class="right_div">
+        <div class="dashboard">
+          <p><i class="fas fa-tachometer-alt"></i> Dashboard <span id="dashboard_description">All requests</span>
+        </div>
+        <div class="dashboard_content">
+          <hr class="hr" style="display: none">
+           <!-- <div class="requests" style="display: none"
+            <p class="request_title">my request title <span class="time_created">12:07 am</span></p>
+            <p class="category">maintenance</p>
+            <p class="request_description">This is a maintenance description card, this is how a user description/request would look like.</p>
+            <p class="request_status">pending</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="/UI/UI Elements/Javascript/user.js"></script>
+</body>
+
+</html>
+
+

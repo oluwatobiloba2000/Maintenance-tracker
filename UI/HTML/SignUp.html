@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/UI/img/technical-support-2_icon-icons.com_52811.ico">
+  <link rel="stylesheet" href="/UI/STYLE/SignUp.css">
+  <title>Sign up | maintenance tracker</title>
+</head>
+
+<body>
+  <main>
+    <div class="side_nav">
+      <a href="/UI/index.html">Home <i class="fas fa-home"></i></a>
+    </div>
+    <!-- page container starts -->
+    <div class="page_container">
+      <div class="form">
+        <h1 id="form_header">Welcome To Maintenance Tracker</h1>
+        <form action="/UI/HTML/user/user.html" method="GET" autocomplete="on">
+          <label for="firstname">Firstname :
+            <br>
+            <input id="firstname" type="text" placeholder="Firstname" required>
+            <br>
+          </label>
+          <br>
+          <!--
+          <span class="firstname_error error">Firstname can't be empty</span>
+          <br> -->
+
+          <label for="lastname">Lastname :
+            <br>
+            <input id="lastname" type="text" placeholder="lastname" required>
+            <br>
+          </label>
+          <br>
+
+          <!-- <span class="Lastname_error error">Lastname can't be empty</span>
+          <br> -->
+
+          <label for="username">Username :
+            <br>
+            <input id="username" type="text" placeholder="choose a Username" required>
+          </label>
+          <br>
+          <!-- <br>
+          <span class="username_error error"></span> -->
+          <br>
+
+          <label for="password">Password :
+            <br>
+            <input id="password" type="password" minlength="5" placeholder="Input a password" required>
+          </label>
+          <!-- <br>
+          <span class="password_error error"></span>
+          <br> -->
+
+          <button id="sign_up_button">sign up</button>
+          <br>
+          <p>Already have an account with us ? <a id="sign_in" href="/UI/index.html">sign in</a> </p>
+        </form>
+      </div>
+    </div>
+    <!-- page container ends -->
+  </main>
+  <!-- javascript for form validation -->
+  <script src="/UI/UI Elements/Javascript/SignUp_validation.js"></script>
+</body>
+
+</html>

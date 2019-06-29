@@ -1,0 +1,345 @@
+* {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #EBF2FA;
+    font-family: 'Poppins', sans-serif;
+}
+
+*:focus {
+    outline: 0;
+    box-shadow: 0 0 10px #05668D;
+}
+
+a:focus {
+    color: #05668D;
+    font-weight: bolder;
+}
+
+button:focus {
+    background-color: #05668D;
+}
+
+.page_container {
+    max-height: 100%;
+}
+
+.nav {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 2%;
+    width: 50%;
+}
+
+ul,
+li {
+    display: inline;
+    list-style-type: none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+ul>li>a {
+    text-decoration: none;
+    padding: 4%;
+}
+
+.left_nav {
+    width: 100px;
+}
+
+.right_nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.right_nav ul li {
+    display: inline;
+}
+
+.right_nav ul li a {
+    padding: 15px;
+    color: #000;
+}
+
+.right_nav ul li a:hover {
+    transition: 0.5s ease;
+    background-color: #05668D;
+    color: #A5BE00;
+}
+
+.sign_in_nav {
+    visibility: hidden;
+}
+
+/* BOTTOM PART */
+.bottom_container {
+    background-image: url("../img/rubens-nguyen-489224-unsplash.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 93vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heading {
+    padding-left: 2%;
+    width: 70;
+    font-size: 1.5rem;
+}
+
+#display_date {
+    color: #000;
+    font-size: 1.5em;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.article {
+    text-align: center;
+    font-weight: bolder;
+    width: 50;
+}
+
+.heading_logo {
+    width: 20%;
+}
+
+/* sign up div starts */
+.sign_up_div {
+    text-align: center;
+    margin-top: 10%;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.sign_up_div p {
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* sign up div ends */
+
+/* SIGN UP BUTTON starts*/
+#sign_up_button {
+    color: white;
+    background-color: #05668D;
+    cursor: pointer;
+    height: 50px;
+    width: 30%;
+    border-radius: 70px;
+    border: none;
+}
+
+#sign_up_button:hover {
+    background-color: #A5BE00;
+    color: #000;
+    transition: 1s ease;
+}
+
+/* sign up button ends */
+.bottom2 {
+    height: 80vh;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 6px solid #05668D;
+    background-color: rgba(235, 242, 250, 0.246);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.952), 0 2px 10px 0 rgba(0, 0, 0, 0.938);
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #05668D;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+#forgot_password {
+    color: #000;
+    text-decoration: none;
+}
+
+#forgot_password:hover {
+    color: #A5BE00;
+}
+
+p {
+    margin: 0;
+
+}
+
+#show_password {
+    /* border-radius: 5px; */
+    margin: 0px;
+    padding: 3px;
+    width: 10%;
+    /* height: 40px; */
+    background-color: #fff;
+    border: 1px solid #05668D;
+    cursor: pointer;
+}
+
+
+button#sign_in_button {
+    color: white;
+    background-color: #05668D;
+    cursor: pointer;
+    margin-top: 10%;
+    height: 50px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+
+button#sign_in_button:hover {
+    transition: 0.6s;
+    color: black;
+    background-color: #A5BE00;
+}
+
+/* footer starts */
+.footer_div {
+    min-height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A5BE00;
+}
+
+.social_links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social_links>span>a {
+    color: #000;
+    font-size: 2rem;
+    padding: 0px 20px 0px 20px;
+}
+
+.fa-facebook:hover {
+    transition: 1s ease;
+    transform: rotate(30deg);
+    color: blue;
+}
+
+.fa-github:hover {
+    transition: 1s ease;
+    transform: rotate(30deg);
+}
+
+.fa-twitter:hover {
+    transition: 1s ease;
+    transform: rotate(30deg);
+    color: rgb(7, 226, 255);
+}
+
+.fa-linkedin:hover {
+    transition: 0.5s ease;
+    transform: rotate(30deg);
+    color: rgb(7, 94, 207);
+}
+
+.copy_right {
+    text-align: center;
+}
+
+/* footer ends */
+
+/* javascript form validation starts*/
+#validating_username {
+    font-size: 0.7rem;
+    color: red;
+    background-color: rgb(235, 242, 250);
+    font-weight: bolder;
+    visibility: hidden;
+}
+
+#validating_password {
+    font-size: 0.7rem;
+    color: red;
+    background-color: rgb(235, 242, 250);
+    font-weight: bolder;
+    visibility: hidden;
+}
+
+#incorrect {
+    color: white;
+    background-color: red;
+    text-align: center;
+    visibility: hidden;
+}
+
+/* javascript form validation ends */
+
+/* Responsiveness */
+@media all and (max-width:800px) {
+    .bottom_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sign_in_nav {
+        visibility: visible;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .right_nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .right_nav ul li {
+        display: inline;
+    }
+
+    .right_nav ul li a {
+        padding: 15px;
+        color: #000;
+    }
+
+    #display_date {
+        font-size: 0.9em;
+    }
+
+}
+
+@media all and (max-width:500px) {
+    .heading {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 355px) {
+    .heading {
+        font-size: 0.9rem;
+    }
+
+    #form {
+        padding: 2%;
+    }
+}
