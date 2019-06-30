@@ -1,4 +1,4 @@
-document.getElementById('sign_up_button').addEventListener('submit' , checkValidation);
+// document.getElementById('sign_up_button').addEventListener('submit' , checkValidation);
 
 // function checkValidation(e){
 //     e.preventDefault();
