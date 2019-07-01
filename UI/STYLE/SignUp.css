@@ -127,7 +127,7 @@ input {
     }
 
     .form {
-        min-width: 80%;
+        width: 80%;
     }
 
 }
