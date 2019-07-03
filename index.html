@@ -63,15 +63,13 @@
             </a>
           </div>
         </div>
-        <!-- bottom1 ends -->
-
         <!-- BOTTOM 2 WHICH IS THE SIGN IN POP UP DIV STARTS -->
-        <div class="bottom2">
+        <div id="i" class="bottom2" >
           <span class="close_form">HOME <i class="far fa-window-close"></i></span>
-          <section>
-            <div id="form">
-              <p id="incorrect"><i class="fas fa-exclamation">&nbsp;Incorrect username or password</i></p>
+
+            <div class="container animate" id="form">
               <form action="./HTML/admin/admin.html" method="GET" autocomplete="on">
+              <p id="incorrect"><i class="fas fa-exclamation">&nbsp;Incorrect username or password</i></p>
                 <h2>Sign in</h2>
                 <label for="username">
                   <i class="far fa-user"></i> Username :<br>
@@ -91,12 +89,12 @@
                 <!-- javascript validation  for password begins-->
                 <span id="validating_password">Password cannot be empty</span>
                 <!-- javascript validation for password ends -->
-                <br>
                 <p><a id="forgot_password" href="#">forgot password ?</a></p>
                 <button id="sign_in_button">Sign in</button>
-              </form>
-            </div>
-          </section>
+              </div>
+
+            </form>
+
         </div>
 
         <!-- BOTTOM 2 ENDS -->

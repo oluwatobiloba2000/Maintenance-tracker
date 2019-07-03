@@ -153,21 +153,31 @@ li a {
 
 .bottom2 {
     z-index: 1;
-    /* border-radius: 5px; */
-    margin: auto;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
     display: none;
-    background-image: url('../img/Flat-Mountains2.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: rgba(177, 190, 0, 0.301);
-    border-top: 5px solid #A5BE00;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.287), 0 2px 10px 0 rgba(0, 0, 0, 0.26);
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.486);
+    padding-top: 60px;
+}
+
+.animate {
+    -webkit-animation: zoomanimation 0.6s;
+    animation: zoomanimation 0.6s
+}
+
+@keyframes zoomanimation {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 .open_form {
@@ -178,7 +188,7 @@ li a {
 }
 
 .close_form {
-    color: red;
+    color: #EBF2FA;
     align-self: flex-end;
     cursor: pointer;
     margin-right: 15px;
@@ -200,6 +210,7 @@ input {
     padding: 2%;
     width: auto;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 #forgot_password {
@@ -340,6 +351,12 @@ button#sign_in_button:hover {
     .social_links>span>a {
         padding: 0px;
     }
+
+    .social_links {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     .heading {
         font-size: 1rem;
     }
