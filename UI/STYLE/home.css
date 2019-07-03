@@ -337,6 +337,9 @@ button#sign_in_button:hover {
 }
 
 @media all and (max-width:500px) {
+    .social_links>span>a {
+        padding: 0px;
+    }
     .heading {
         font-size: 1rem;
     }
