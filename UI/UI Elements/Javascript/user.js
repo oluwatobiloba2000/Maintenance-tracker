@@ -5,7 +5,7 @@ const closeForm = document.getElementById('close');
 const new_request = document.getElementById('new_request');
 
 
-document.querySelector('.fa-bars').addEventListener('click', () => {
+document.querySelector('.nav-bar').addEventListener('click', () => {
     sideNav.style.width = "60%";
     document.body.style.backgroundColor = "rgba(0,0,0,0.5)"
 });

@@ -1,8 +1,8 @@
 const sideNav = document.querySelector('.side_nav');
 
 
-document.querySelector('.fa-bars').addEventListener('click', () => {
-    sideNav.style.width = "60%";
+document.querySelector('.nav-bar').addEventListener('click', () => {
+    sideNav.style.width = "80%";
     document.body.style.backgroundColor = "rgba(0,0,0,0.5)"
 });
 

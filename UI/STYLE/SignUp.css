@@ -105,6 +105,9 @@ input {
 }
 
 @media all and (max-width:800px) {
+    /* input{
+        width: 50%;
+    } */
     form {
         padding-left: 20px;
     }

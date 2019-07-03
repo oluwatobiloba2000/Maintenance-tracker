@@ -106,3 +106,14 @@ function date() {
 
 }
 setInterval(date, 1000);
+
+
+const popupForm = document.querySelector('.bottom2');
+const navSignin = document.getElementById('nav_sign_in');
+navSignin.addEventListener('click' , ()=>{
+  // popupForm.style.display= 'flex';
+  popupForm.classList.add('open_form');
+});
+document.querySelector('.close_form').addEventListener('click' ,()=>{
+  popupForm.classList.remove('open_form');
+})

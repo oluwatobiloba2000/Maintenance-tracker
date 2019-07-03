@@ -39,15 +39,15 @@ a:focus {
     width: 5%;
 }
 
-.fa-bars {
+.nav-bar {
     display: none;
     cursor: pointer;
     font-size: 30px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-right: 20px;
 }
 
-.fa-bars:hover {
+.nav-bar:hover {
     transition: 0.5s;
     color: #A5BE00;
 }
@@ -188,7 +188,7 @@ a:focus {
 
 /* RESPONSIVENESS */
 @media all and (max-width:1000px) {
-    .fa-bars {
+    .nav-bar {
         display: block;
     }
 
@@ -221,11 +221,13 @@ a:focus {
         top: 23;
         left: 0;
         background-color: #EBF2FA;
-        overflow-x: hidden;
-        transition: 0.5s ease-in-out;
+        overflow-y: auto;
+        transition: 600ms cubic-bezier(.42,0,0,.99);
         padding-top: 30px;
     }
-
+    .side_nav_logo {
+        display: none;
+    }
     .side_nav_admin {
         display: flex;
         justify-content: center;
@@ -233,9 +235,9 @@ a:focus {
     }
 
     .side_nav li {
+        font-size: 4vw;
         margin-top: 9%;
     }
-
     .right_div {
         display: flex;
         flex-direction: column;
@@ -243,7 +245,6 @@ a:focus {
         width: 90%;
         margin: 0;
     }
-
     .page_container {
         justify-content: space-evenly;
         display: flex;
