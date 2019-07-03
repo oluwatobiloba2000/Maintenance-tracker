@@ -198,20 +198,7 @@ a:focus {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.561), 0 6px 20px 0 rgba(0, 0, 0, 0.513);
 }
 
-/* .request_title {
-    padding: 1%;
-    margin: 0;
-    background: rgba(5, 102, 141, 0.342);
-}
 
-.time_created {
-    float: right;
-}
-
-.request_status {
-    margin-right: 3px;
-    text-align: right;
-} */
 
 /* REQUEST STYLES ENDS */
 #pop_up_form {
@@ -269,6 +256,21 @@ button {
 }
 
 /* RESPONSIVENESS */
+@media all and (max-width:400px){
+    .dashboard_content {
+        padding-left: 0px;
+    }
+    .dashboard {
+        top: 0;
+        margin: 0;
+        padding-top: 40px;
+        margin-left: 0px;
+    }
+    .page_container {
+        padding-top: 0px;
+    }
+}
+
 @media all and (max-width:1000px) {
     .nav-bar {
         display: block;

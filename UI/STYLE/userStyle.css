@@ -272,6 +272,20 @@ button {
 }
 
 /* RESPONSIVENESS */
+@media all and (max-width:400px){
+    .dashboard_content {
+        padding-left: 0px;
+    }
+    .dashboard {
+        top: 0;
+        margin: 0;
+        padding-top: 40px;
+        margin-left: 0px;
+    }
+    .page_container {
+        padding-top: 0px;
+    }
+}
 @media all and (max-width:1000px) {
     .nav-bar {
         display: block;
