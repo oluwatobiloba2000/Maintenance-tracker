@@ -1,0 +1,19 @@
+{
+  "name": "maintenance-tracker-api",
+  "version": "1.0.0",
+  "description": "teencode final project, building a maintenance-tracker app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oluwatobiloba2000/Maintenance-tracker.git"
+  },
+  "author": "Anani oluwatobiloba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oluwatobiloba2000/Maintenance-tracker/issues"
+  },
+  "homepage": "https://github.com/oluwatobiloba2000/Maintenance-tracker#readme"
+}
