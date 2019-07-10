@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/oluwatobiloba2000/Maintenance-tracker/issues"
   },
-  "homepage": "https://github.com/oluwatobiloba2000/Maintenance-tracker#readme"
+  "homepage": "https://github.com/oluwatobiloba2000/Maintenance-tracker#readme",
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
 }
