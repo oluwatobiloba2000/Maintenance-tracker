@@ -1,4 +1,4 @@
-const uuidv1 = require('uuid/v1');
+const uuidv1 = require('uuid/v1') ;
 
 const requests =[
     {
@@ -6,21 +6,21 @@ const requests =[
         title : "my request",
         description : "lorem impsum",
         time_requested : new Date(),
-        status : pending
+        status : "pending"
     },
     {
         id : uuidv1(),
         title : "my request 2",
         description : "lorem impsum",
         time_requested : new Date(),
-        status : pending
+        status : "pending"
     },
     {
         id : uuidv1(),
         title : "my request 3",
         description : "lorem impsum",
         time_requested : new Date(),
-        status : pending
+        status : "pending"
     },
 ]
 
